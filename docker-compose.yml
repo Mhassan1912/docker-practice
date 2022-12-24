@@ -4,3 +4,9 @@ services:
    image: nginx:latest
    ports:
      - "8080:80"
+   networks:
+      - network
+networks:
+  network:
+    driver: bridge
+    name: bliss_network
